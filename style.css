@@ -8,6 +8,16 @@
     background: url(photo.jpg);
     height: 100vh;
     background-size: cover;
+    background-position: center;
+
+}
+@media(max-width: 700px){
+    .main_box{
+        background-size: cover;
+        background-position: 85% center;
+        width: 100vw;
+        height: 100vh;
+    }
 
 }
 .btn_one{
@@ -104,4 +114,10 @@
 }
 #check:checked ~ .btn_one{
     opacity: 0;
+}
+.cards{
+    height: 200px;
+    width: 150px;
+    background-color: rgb(136, 131, 131);
+    border: 2px solid rgb(218, 213, 213);
 }
