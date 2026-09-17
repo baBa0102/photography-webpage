@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Tenor Sans", sans-serif;
+    color: whitesmoke;
+}
+header{
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    justify-content: center;
+    color: white;
+    
+}
+.mainbox{
+    background-image: url(photo.jpg);
+    height: 100vh;
+
+}
+.services{
+    border: 2px solid grey;
+}
+.servicesList ul{
+    margin-top: 60px;
+    padding-top:20px ;
+}
