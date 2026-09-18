@@ -1,26 +1,111 @@
 *{
+
     margin: 0;
+
     padding: 0;
+
     font-family: "Tenor Sans", sans-serif;
+
     color: whitesmoke;
-}
-header{
-    display: flex;
-    flex-direction: row;
-    gap: 2rem;
-    justify-content: center;
-    color: white;
-    
-}
-.mainbox{
-    background-image: url(photo.jpg);
-    height: 100vh;
 
 }
-.services{
-    border: 2px solid grey;
+
+header{
+
+    display: flex;
+
+    flex-direction: row;
+
+    gap: 2rem;
+
+    justify-content: center;
+
+    color: white;
+
+    padding: 1.5rem;
+
+    font-size: 2rem;
+
 }
-.servicesList ul{
-    margin-top: 60px;
-    padding-top:20px ;
+
+.mainbox{
+
+    background-image: url(photo.jpg);
+
+    min-height: 100vh;
+
+    background-position: center;
+
+    background-size: cover;
+
+}
+
+/* .services{
+
+    border: 0.01rem solid grey;
+
+} */
+
+.serviceList li{
+
+    border: 0.01rem solid grey;
+
+    padding: 2rem;
+
+    font-size: 1.2rem;
+
+    list-style: none;
+
+    border-radius: 1rem;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 20px;
+
+    overflow: hidden;
+
+}
+
+.serviceList li dd{
+
+    font-size: 0.8rem;
+
+}
+
+.serviceimage{
+
+    width: clamp(50px, 6vw, 90px);
+
+    aspect-ratio: 1;
+
+    border-radius: 50%;
+
+    overflow: hidden;
+
+    flex-shrink: 0;
+
+}
+
+.serviceimage img{
+
+    width: 125%;
+
+    height: 125%;
+
+    object-fit: cover;
+
+    margin: -12.5%;
+
+}
+
+.serviceinfo{
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 10px;
+
 }
