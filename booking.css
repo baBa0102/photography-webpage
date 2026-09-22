@@ -27,6 +27,11 @@ header{
     font-size: 2rem;
 
 }
+@media(max-width:490px){
+    header{
+        font-size: 1rem;
+    }
+}
 
 .mainbox{
 
@@ -62,6 +67,7 @@ header{
     align-items: center;
     gap: 20px;
     overflow: hidden;
+    /* min-height: 120px; */
 
 }
 
@@ -100,9 +106,33 @@ header{
 .serviceinfo{
 
     display: flex;
-
     flex-direction: column;
-
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex: 1;
     gap: 10px;
 
+}
+.booknow{
+    padding: 0.7rem 1.5rem;
+    border: 1px solid whitesmoke;
+    border-radius: 2rem;
+    background: transparent;
+    color: whitesmoke;
+    font-family: "Tenor Sans", sans-serif;
+    font-size: 0.9rem;
+    cursor: pointer;
+    margin-left: auto;
+}
+.booknow:hover{
+    background-color:grey ;
+    padding: 0.8rem 1.6rem;
+}
+@media(max-width:490px){
+    .serviceList li{
+        font-size: 0.7rem;
+    }
+    .booknow{
+        padding: 0.3rem 0.8rem;
+    }
 }
