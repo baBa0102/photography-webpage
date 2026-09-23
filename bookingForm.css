@@ -1,0 +1,191 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Tenor Sans", sans-serif;
+}
+
+.booking-form-page{
+    min-height: 100vh;
+    background-image: url(photo.jpg);
+    background-position: center;
+    background-size: cover;
+    padding: 3rem 1rem;
+}
+
+.booking-form-container{
+    width: min(700px, 100%);
+    margin: auto;
+    padding: 2.5rem;
+    border-radius: 1rem;
+
+    background: rgba(0, 0, 0, 0.65);
+    backdrop-filter: blur(8px);
+}
+
+.booking-form-container h1{
+    color: whitesmoke;
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.subtitle{
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #ccc;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+}
+
+label{
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+    color: whitesmoke;
+}
+
+
+/* Input wrapper */
+
+.inputBox{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    width: 100%;
+    padding: 0 0.8rem;
+
+    border: 1px solid grey;
+    border-radius: 0.5rem;
+
+    background: rgba(255, 255, 255, 0.08);
+}
+
+.inputBox i{
+    color: #ccc;
+    flex-shrink: 0;
+}
+
+
+/* Inputs */
+
+.inputBox input,
+.inputBox select{
+    width: 100%;
+
+    padding: 0.8rem 0;
+
+    border: none;
+    outline: none;
+
+    background: transparent;
+    color: white;
+}
+
+.inputBox input::placeholder{
+    color: #aaa;
+}
+
+
+/* Select */
+
+.inputBox select{
+    cursor: pointer;
+}
+
+.inputBox select option{
+    color: black;
+}
+
+
+/* Form rows */
+
+.form-row{
+    display: flex;
+    gap: 1rem;
+}
+
+.form-row > div{
+    flex: 1;
+}
+
+
+/* Textarea */
+
+.textareaBox{
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+
+    width: 100%;
+    padding: 0.8rem;
+
+    border: 1px solid grey;
+    border-radius: 0.5rem;
+
+    background: rgba(255, 255, 255, 0.08);
+}
+
+.textareaBox i{
+    color: #ccc;
+    margin-top: 3px;
+}
+
+.textareaBox textarea{
+    width: 100%;
+    min-height: 100px;
+
+    border: none;
+    outline: none;
+
+    resize: vertical;
+
+    background: transparent;
+    color: white;
+}
+
+.textareaBox textarea::placeholder{
+    color: #aaa;
+}
+
+
+/* Confirm button */
+
+button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+
+    margin-top: 1.5rem;
+    padding: 0.9rem;
+
+    border: none;
+    border-radius: 2rem;
+
+    background: #e8b95a;
+    color: black;
+
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+
+/* Mobile */
+
+@media (max-width: 600px){
+
+    .booking-form-container{
+        padding: 1.5rem;
+    }
+
+    .form-row{
+        flex-direction: column;
+        gap: 0.6rem;
+    }
+
+}

@@ -83,7 +83,7 @@ header{
 
     aspect-ratio: 1;
 
-    border-radius: 50%;
+    border-radius: 40%;
 
     overflow: hidden;
 
@@ -117,7 +117,7 @@ header{
     padding: 0.7rem 1.5rem;
     border: 1px solid whitesmoke;
     border-radius: 2rem;
-    background: transparent;
+    background: rgba(162, 125, 32, 0.525);
     color: whitesmoke;
     font-family: "Tenor Sans", sans-serif;
     font-size: 0.9rem;
