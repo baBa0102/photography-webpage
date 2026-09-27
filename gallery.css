@@ -8,7 +8,7 @@
 .gallery-page {
     min-height: 100vh;
     padding: 2rem 1rem;
-    background-image: url(photo.jpg);
+    background-image: url(/assets/photo.jpg);
     background-position: center;
     background-size: cover;
 }

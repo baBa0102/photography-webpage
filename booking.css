@@ -35,7 +35,7 @@ header{
 
 .mainbox{
 
-    background-image: url(photo.jpg);
+    background-image: url(/assets/photo.jpg);
 
     min-height: 100vh;
 

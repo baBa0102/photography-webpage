@@ -6,7 +6,7 @@
 }
 
 .main_box{
-    background: url(photo.jpg);
+    background: url(/assets/photo.jpg);
     height: 100vh;
     background-size: cover;
     background-position: center;
@@ -172,7 +172,7 @@
     z-index:1;
 }
 #card1{
-    background: url(card1.png);
+    background: url(/assets/card1.png);
     background-size: cover;
     background-position: center;
     color: whitesmoke
@@ -186,7 +186,7 @@
 }
 
 #card2{
-    background: url(card2.png);
+    background: url(/assets/card2.png);
     background-size: cover;
     background-position: center;
 }

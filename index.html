@@ -14,6 +14,25 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
   </head>
+  <script>
+    fetch("http://localhost:3000/api/test", {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify({
+            name: "Basit",
+            service: "Wedding Photography"
+        })
+    })
+        .then(response => response.json())
+        .then(data => {
+            console.log(data);
+        })
+        .catch(error => {
+            console.error("Error:", error);
+        });
+</script>
   <body>
     <div class="main_box">
         <input type="checkbox" id="check" />
@@ -97,5 +116,15 @@
             </div>
         </div>
     </div>
+    <script>
+      fetch("http://localhost:3000/api")
+        .then(response => response.json())
+        .then(data =>{
+          console.log(data.message);
+        })
+        .catch(error=>{
+          console.error("Error connecting to backend:", error);
+        });
+    </script>
   </body>
 </html>

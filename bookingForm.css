@@ -7,7 +7,7 @@
 
 .booking-form-page{
     min-height: 100vh;
-    background-image: url(photo.jpg);
+    background-image: url(/assets/photo.jpg);
     background-position: center;
     background-size: cover;
     padding: 3rem 1rem;
