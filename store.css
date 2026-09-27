@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Tenor Sans", sans-serif;
+}
+.store-page {
+    min-height: 100vh;
+    padding: 2rem;
+    color: white;
+    padding: 2rem 1rem;
+    min-height: 100vh;
+    padding: 2rem 1rem;
+    background-image: url(photo.jpg);
+    background-position: center;
+    background-size: cover;
+
+}
+
+.store-page header {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.store-container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.store-heading {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.store-heading h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.7rem;
+}
+
+.store-heading p {
+    color: #ccc;
+}
+
+.store-details {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+}
+
+.store-card,
+.store-map {
+    background: rgba(0, 0, 0, 0.55);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-radius: 1rem;
+    padding: 2rem;
+    text-align: center;
+}
+
+.store-card i {
+    font-size: 2rem;
+    color: #f4c542;
+    margin-bottom: 1rem;
+}
+
+.store-card h3 {
+    margin-bottom: 0.8rem;
+}
+
+.store-card p,
+.store-map p {
+    color: #ccc;
+    line-height: 1.6;
+}
+
+.store-map {
+    margin-top: 2rem;
+    min-height: 250px;
+}
+
+.store-map h2 {
+    margin-bottom: 1rem;
+}
+
+@media (max-width: 700px) {
+    .store-page {
+        padding: 1rem;
+    }
+
+    .store-details {
+        grid-template-columns: 1fr;
+    }
+
+    .store-heading h1 {
+        font-size: 2rem;
+    }
+}
