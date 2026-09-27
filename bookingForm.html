@@ -20,7 +20,7 @@
             </p>
 
 
-            <form>
+            <form id="bookingForm">
 
                 <!-- Service -->
 
@@ -182,6 +182,47 @@
         </div>
 
     </div>
+
+<script>
+    const bookingForm = document.querySelector("#bookingForm");
+
+    bookingForm.addEventListener("submit", async (event) => {
+        event.preventDefault();
+
+        const formData = {
+            service: document.querySelector("#service").value,
+            name: document.querySelector("#name").value,
+            email: document.querySelector("#email").value,
+            phone: document.querySelector("#phone").value,
+            date: document.querySelector("#date").value,
+            time: document.querySelector("#time").value,
+            location: document.querySelector("#location").value,
+            details: document.querySelector("#details").value
+        };
+
+        try {
+            const response = await fetch("http://localhost:3000/api/bookings", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json"
+                },
+                body: JSON.stringify(formData)
+            });
+
+            const data = await response.json();
+
+            if (!response.ok) {
+                throw new Error(data.message || "Booking request failed.");
+            }
+
+            alert(data.message);
+            bookingForm.reset();
+        } catch (error) {
+                console.error("Booking error:", error);
+                alert(error.message);
+            }
+    });
+</script>
 
 </body>
 </html>
